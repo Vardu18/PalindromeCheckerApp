@@ -5,7 +5,8 @@ public class PalindromeCheckerApp {
         System.out.println ("System initialized Successfully");
 
         //USecase 2
-        public class UseCase2PalindromeCheckerApp {
+        public class UseCase2PalindromeCheckerApp
+        {
 
             public static void main(String[] args) {
 
@@ -23,6 +24,31 @@ public class PalindromeCheckerApp {
                     System.out.println(word + " is a Palindrome.");
                 } else {
                     System.out.println(word + " is not a Palindrome.");
+                }
+            }
+
+            //USECASE 3
+            public class UseCase3PalindromeCheckerApp {
+
+                public static void main(String[] args) {
+
+                    // Original string
+                    String original = "madam";
+
+                    // Variable to store reversed string
+                    String reversed = "";
+
+                    // Reverse using for loop
+                    for (int i = original.length() - 1; i >= 0; i--) {
+                        reversed = reversed + original.charAt(i);
+                    }
+
+                    // Compare original and reversed string
+                    if (original.equals(reversed)) {
+                        System.out.println(original + " is a Palindrome.");
+                    } else {
+                        System.out.println(original + " is not a Palindrome.");
+                    }
                 }
             }
         }
